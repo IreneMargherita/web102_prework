@@ -1,8 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Cabin:wght@400;500;600;700&display=swap');
 
 body {
-    font-family: 'Cabin';
-    background-color: #758190;
+    font-family: 'Cabin', sans-serif;
+    background-color: #FFF9C4; /* Light Yellow Background */
+    color: #333; /* Default Text Color */
 }
 
 #tentacles {
@@ -11,20 +12,27 @@ body {
 
 .header {
     display: flex;
-    background-color: lightblue;
+    background-color: #FFD700; /* Primary Yellow */
     padding: 1%;
     align-items: center;
     margin-left: -10px;
     margin-right: -10px;
     margin-top: -10px;
+    color: white; /* White Text in Header */
 }
 
 .stats-container {
     display: flex;
+    align-items: center;
+}
+
+.stats-container:hover {
+    cursor: pointer; /* Changes cursor to pointer on hover */
+    box-shadow: 0 0 30px #FFC107; /* Adds box-shadow on hover with Secondary Yellow */
 }
 
 .stats-card {
-    background-color: #a8b0bc;
+    background-color: #FFEB3B; /* Accent Yellow */
     border-radius: 7px;
     padding: 1%;
     margin: 1%;
@@ -34,6 +42,7 @@ body {
 
 #num-contributions, #total-raised, #num-games {
     font-size: 50px;
+    color: #FF9800; /* Deep Orange */
 }
 
 #games-container {
@@ -45,11 +54,11 @@ body {
 .game-img {
     width: 100%;
     border-radius: 5px;
-    box-shadow: 0 0 10px #FFFFFF;
+    box-shadow: 0 0 10px #FFFFFF; /* Keep white shadow for contrast */
 }
 
 .game-card {
-    background-color: #FFFFFF;
+    background-color: #FFFFFF; /* White Background for Cards */
     padding: 1%;
     margin: 1%;
     width: 300px;
@@ -59,7 +68,7 @@ body {
 
 .game-card:hover {
     cursor: pointer;
-    box-shadow: 0 0 30px lightblue;
+    box-shadow: 0 0 30px #FFC107; /* Hover Effect with Secondary Yellow */
 }
 
 #button-container {
@@ -67,9 +76,16 @@ body {
 }
 
 button {
-    font-family: 'Cabin';
+    font-family: 'Cabin', sans-serif;
     border: none;
     padding: 1%;
     margin: 1%;
     border-radius: 7px;
+    background-color: #FFEB3B; /* Accent Yellow */
+    color: #333; /* Text Color for Buttons */
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #FFC107; /* Secondary Yellow on Hover */
 }
